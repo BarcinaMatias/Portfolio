@@ -102,7 +102,7 @@
                             <h1 class="home__title">Hola, soy Matias</h1>
                             <h3 class="home__subtitle">Front-End Developer Trainee</h3>
                             <p class="home__description">
-                                HTML/CSS/JAVASCRIPT/REACT/REACT NATIVE
+                                HTML/CSS/JAVASCRIPT/REACT/REACT NATIVE/GIT
                             </p>
                             <a href="#contact" class="button button--flex">
                              Contactame   <i class="uil uil-message button__icon"></i>
@@ -129,10 +129,10 @@
             <div class="about__container container grid">
                 <img src="assets/img/yo.png" alt="yo" class="about_img">
                 <div class="about__data">
-                    <p class="about__description">Hola mi nombre es Matias Barcina, tengo 25 años, soy estudiante de Lic. en Administracion UNC
-                        , y actualmente me encuentro en la busqueda de hacer mis primeras experiencias en el area de Programación,
-                        dejo disponible mi CV para el que quiera consultarlo y mas abajo se encuentra mi Portfolio donde
-                        volqué todos mis conocimientos adquiridos, mezclándolos con temas empresariales, como asi tambien temas
+                    <p class="about__description">Hola mi nombre es Matias Barcina, tengo 25 años, soy estudiante de Lic. en Administración UNC
+                        , y actualmente me encuentro en la búsqueda de hacer mis primeras experiencias en el area de Programación,
+                        dejo disponible mi CV para el que quiera consultarlo y más abajo se encuentran mis Proyectos donde
+                        volqué todos mis conocimientos adquiridos, mezclándolos con temas empresariales, como así también temas
                         de actualidad como las Criptomonedas. Muchas gracias por tu visita!</p>
 
                     <div class="about__info">
@@ -144,7 +144,7 @@
                     </div>
 
                     <div class="about__buttons">
-                        <a download="" href="assets/pdf/MATIAS BARCINA.pdf" class="button button--flex">
+                        <a download="" href="assets/pdf/MATIASBARCINA.pdf" class="button button--flex">
                            Descargar CV <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -166,7 +166,7 @@
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">CONSULTOR DE EMPRESAS</h3>
                             <p class="portfolio__description">Utilizando HTML5, CSS3, y React permite obtener una consultoria segun las caracteristicas principales de tu negocio.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://consultorempresa.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
                                Demo 
                                <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -178,7 +178,7 @@
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">APP TURNOS COMPLEJO</h3>
                             <p class="portfolio__description">Utilizando solamente HTML5, CSS3, Y JavaScript es una app que permite seleccionar varios servicios, reservar un turno y dar un resumen de lo solicitado.</p>
-                            <a href="../APP FUTBOL/index.html" class="button button--flex button--small portfolio__button">
+                            <a href="https://prediofutbol.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
                                Demo 
                                <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -190,7 +190,7 @@
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">API CRIPTOMONEDAS</h3>
                             <p class="portfolio__description">Consumiendo una API externa permite revisar la cotizacion de las criptomonedas mas populares en tiempo real.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://cotizarcripto.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
                                Demo 
                                <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -253,27 +253,28 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form name="contact" method="POST" data-netlify="true" action="" class="contact__form grid ">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Nombre</label>
-                            <input type="text" class="contact__input">
+                            <label for="" class="contact__label" name="name">Nombre</label>
+                            <input type="text" class="contact__input" name="name">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" class="contact__input" name="email">
                         </div>
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Mensaje</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__content"></textarea>
+                        <br/>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__content"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button type="submit" href="#" class="button button--flex">
                             Enviar Mensaje  
                             <i class="uil uil-message button__icon"></i> 
-                        </a>
+                        </button>
                        
                     </div>
 
